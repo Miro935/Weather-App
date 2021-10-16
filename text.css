@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: lightblue;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.weather {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border: none;
+    width: 100%;
+    max-width: 600px;
+    margin: 1em;
+}
+
+
+/* Style for the topnav */
+.topnav {
+    overflow: hidden;
+    background-color: rgba(58, 58, 119, 0.3);
+}
+
+.topnav a,
+.topnav p {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav p {
+    color: white;
+    font-size: 20px;
+}
+
+.topnave a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+.topnav a.active div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.topnav .search {
+    float: right;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 10px;
+    font-size: 15px;
+    border: none;
+}
+
+.topnav .search button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 10px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search button:hover {
+    background: #ccc;
+}
+
+
+.currentWeather {
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.currentWeather .temp {
+    font-size: 100px;
+    font-weight: 100;
+}
+
+.currentWeather p,
+.currentWeather .description {
+    text-align: center;
+    font-size: 30px;
+}
+
+.currentWeather p {
+    margin-top: 30px;
+}
+
+.currentWeather .middle {
+    text-align: center;
+}
+
+.icon,
+.temp {
+    display: inline-block;
+}
+
+.detail {
+    position: flex;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.futureWeather {
+    position: flex;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
